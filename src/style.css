@@ -1,0 +1,108 @@
+/*I typically organize my css from keyword tags, #ids, .classes, 
+[attributes], usually in the order that the appear on the webpage.*/
+body {
+	font-family: 'Century Gothic', sans-serif;
+	margin: 0;
+}
+header {
+	background-color: lightgray;
+	display: block;
+	padding: 6px 10px 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+h2 {
+	font-weight: 400;
+}
+nav	{
+    display: flex;
+    align-items: center;
+}
+nav a {
+	margin: 0 5px;
+}
+a {
+	text-decoration: none;
+}
+section {
+	width: 98%;
+	padding: 20px 0;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article {
+	min-height: 130px;
+	width: 90%;
+	margin:10px auto;
+	background-color: lightgray;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	display: inline-block;
+}
+footer {
+	background-color: lightgray;
+	padding: 30px;
+}
+.logo {
+	height: 40px;
+    width: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #444;
+    top: 10px;
+}
+.thumbnail {
+	border-radius: 50%;
+}
+.cta {
+	width: 100px;
+	padding: 20px 30px;
+	background-color: #1616c7;
+	color:#fff;
+	border-radius: 15px;
+	text-align: center;
+}
+.one-col-content:first-child { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+ }
+ .placeholder-img {
+ 	margin: 0 10px 10px 0;
+ }
+ .myaccount {
+ 	display: flex;
+ 	flex-direction: row;
+ 	align-items: center;
+	margin-top: 10px;
+ }
+
+/*I style mobile first leaving any modifications to the media queries at the end of my document*/
+
+@media all and (min-width: 1024px) {
+	header {
+		    padding: 8px 50px 10px;
+	}
+	footer {
+		padding: 60px;
+	}
+	.one-col-content {
+		width: 30.2%;
+	}
+	.two-col-content {
+		width: 62.2%;
+	}		
+	.one-col-content,
+	.two-col-content {
+		margin: 10px;
+	}
+	.myaccount {
+		margin-top: 0;
+	}
+}
+
+
